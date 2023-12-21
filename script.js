@@ -7,14 +7,15 @@ function makeSquares(numOfSquares) {
     for(i = 0; i < numOfSquares; i++) {
         const row = document.createElement("div");
         row.classList.toggle("row");
-
-        row.textContent = "r";
+        col.classList.toggle("square");
 
         for(j = 0; j < numOfSquares - 1; j++) {
             const col = document.createElement("div");
             col.classList.toggle("col");
+            col.classList.toggle("item");
+            col.classList.toggle("square");
 
-            col.textContent = "c";
+            col.textContent = "item";
 
             row.appendChild(col);
         }  

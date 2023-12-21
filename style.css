@@ -1,21 +1,32 @@
+* {
+    align-items: center;
+}
+
 .container {
     display: flex;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    border-left: 2px solid black;
+    border: 2px solid black;
+    width: 75%;
 }
 
 .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 90%;
-    border-right: 2px solid black;
 }
 
 .col {
     flex-basis: 100%;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
-    
 }
+
+.item {
+    background-color: blue;
+    opacity: 0;
+    transition: opacity 2s ease 0.4s, transform 0.8s ease;
+    transform: scale(1);
+}
+
+.item:hover {
+    opacity: 1; 
+    transition: opacity 0.2s ease;
+    transform: scale(1.04);
+  }
