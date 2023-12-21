@@ -1,15 +1,21 @@
 .container {
     display: flex;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
 }
 
 .row {
-    flex: 1;
     display: flex;
-    background-color: palegreen;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    border-right: 2px solid black;
 }
 
 .col {
-    flex: 1;
-    flex-direction: column;
-    background-color: peru;
+    flex-basis: 100%;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    
 }

@@ -23,4 +23,4 @@ function makeSquares(numOfSquares) {
     }   
 }
 
-makeSquares(3);
+makeSquares(16);
